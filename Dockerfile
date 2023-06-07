@@ -14,7 +14,7 @@ ENV LANG C.UTF-8
 
 RUN apt-get update
 RUN apt-get install -y \
-    ${PYTHON} python3-pip git
+    ${PYTHON} python3-pip git libsndfile1
 
 RUN ${PIP} --no-cache-dir install --upgrade pip setuptools
 

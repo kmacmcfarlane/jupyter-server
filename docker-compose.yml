@@ -6,7 +6,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ~/ai:/mnt/ai
+      - $DATA_MOUNT_DIR:/mnt/ai
     restart: always
     runtime: nvidia
     environment:
